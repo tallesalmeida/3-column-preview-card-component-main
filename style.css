@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 85vw;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.carros {
+    padding: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carro-titulo {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.descricao {
+    font-family: 'Lexend Deca';
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+
+.button {
+    width: 35vw;
+    border-radius: 20px;
+    padding: 12px;
+    border-style: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca';
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#button-sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+#button-suv {
+    color: hsl(184, 100%, 22%);
+}
+
+#button-luxury {
+    color: hsl(179, 100%, 13%);
+}
